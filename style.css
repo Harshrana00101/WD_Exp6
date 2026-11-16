@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+.hover-primary {
+    transition: color 0.2s ease;
+}
+
+.hover-primary:hover {
+    color: #0d6efd !important;
+}
+
+.hero-card-banner {
+    transition: transform 0.3s ease;
+}
+
+/* ========================================================
+   CSS Media Queries for Fine-Tuned Responsive Layouts
+   ======================================================== */
+
+/* Mobile viewports (Max-width 576px) */
+@media (max-width: 576px) {
+    .display-5 {
+        font-size: 1.85rem;
+    }
+    
+    .hero-card-banner {
+        padding: 2rem !important;
+    }
+
+    .hero-card-banner i {
+        font-size: 3rem !important;
+    }
+}
+
+/* Tablet viewports (Between 577px and 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+    .display-5 {
+        font-size: 2.25rem;
+    }
+
+    aside {
+        margin-top: 2rem;
+    }
+}
+
+/* Large Desktop screens (Min-width 992px) */
+@media (min-width: 992px) {
+    .hero-card-banner:hover {
+        transform: scale(1.03);
+    }
+}
